@@ -1,0 +1,602 @@
+@CHARSET "ISO-8859-1";
+@import url("zamzar-responsive.css") screen, projection;
+
+.form {top:0; left:0; margin:0; padding:0;}
+.body {font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000 ; text-decoration: none; margin: 0px auto; padding: 0px;}
+.bodyBig {font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: #000000 ; text-decoration: none;}
+.bodybd {font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000 ; text-decoration: none; margin: 0px auto; padding: 0px; font-weight: bold;}
+.bodysm {font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #000000 ; text-decoration: none; margin: 0px auto; padding: 0px;}
+.bodyvsm {font-family: Arial, Helvetica, sans-serif; font-size: 10px; color: #000000 ; text-decoration: none; margin: 0px auto; padding: 0px;}
+.bodyrd {font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #C00000 ; text-decoration: none; margin: 0px auto; padding: 0px;}
+.bodygr {font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #008000 ; text-decoration: none; margin: 0px auto; padding: 0px;}
+.linksm {font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #646265;}
+
+/* Page links */
+.body a {font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #003399;}
+.body a:hover {color: #000000;}
+.bodysm a {font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #003399;}
+.bodysm a:hover {color: #000000;}
+/*.body a:visited {color: #996633;}
+.body a:visited:hover {color: #000000;} */
+
+body {font: 13px "Tahoma",sans-serif; background: #FFF; color: #000; margin: 0px auto; padding: 0px;background:#666;opacity:.8;filter:Alpha(Opacity=30);}
+
+div.ruler {line-height: 0px; height: 1px; background: #DDD; font-size: 0px; margin: 22px 0px 15px 0px;}
+div.rulerSm {line-height: 0px; height: 1px; background: #DDD; font-size: 0px; margin: 8px 0px 8px 0px;}
+div.rulerGry {line-height: 0px; height: 1px; background: #999999; font-size: 0px; margin: 22px 0px 15px 0px;}
+div.rulerDk {line-height: 0px; height: 1px; background: #646265; font-size: 0px; margin: 0px 0px 0px 0px;}
+div.step2 {padding-left: 50px; padding-right: 50px; padding-top: 5px; float: left; border-left: 1px #999 solid; width: 150px;}
+div.step3 {padding-left: 10px; padding-right: 10px; padding-top: 15px; float: left; border-left: 1px #999 solid; border-right: 1px #999 solid; width: 160px;}
+
+.nowrapping {white-space:nowrap;}
+
+/* General page containing div */
+.page-container {width: 770px; margin: 0em auto; padding: 0em}
+
+/* Ruzee box styles */
+.loginBox { background: #6984A2; padding: 2px 10px 2px 10px; margin: 0px; border: solid 1px #6984A2;}
+.loggedInBox { background: #6984A2; padding: 2px 10px 2px 10px; margin: 0px; border: solid 1px #6984A2;}
+.conversionBox {
+    background: #E0EEBA;
+    padding-left: 15px;
+    margin: 0px;
+    border: solid 2px #5474AF;
+    
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 5px 16px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 5px 16px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 5px 16px -1px rgba(0,0,0,0.75);
+    position: relative;
+    z-index: 11;
+    padding: 10px 10px 15px 10px;
+}
+/* Make the selected tab go over the box */
+table#tabtable {
+    z-index: initial !important;
+}
+
+.manageBox {
+    background: #FFFFFF;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0px;
+    border: solid 2px #5474AF;
+    
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 5px 16px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 5px 16px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 5px 16px -1px rgba(0,0,0,0.75);
+    position: relative;
+    z-index: 11;
+    padding: 10px 10px 15px 10px;
+}
+.greenBox { background: #E0EEBA; padding: 5px 10px 5px 10px; margin: 0px; border: solid 2px #5474AF;}
+.lightGreenBox { background: #DEF4AA; padding: 5px 10px 5px 10px; margin: 0px; border: solid 2px #68BD2D;}
+.redBox { background: #FFECEF; padding: 5px 10px 5px 10px; margin: 0px; border: solid 2px #FF0000;}
+.greyBox { 
+    background: #F2F2F2; padding: 5px 10px 5px 10px; margin: 0px; border: solid 1px #CCCCCC;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+.greyBoxConversion { width:710px; background: #F2F2F2; padding: 10px 10px 15px 10px; margin: 0px; border: solid 1px #CCCCCC;}
+.greyBoxShare { background: #F2F2F2; padding: 5px 5px 5px 5px; margin: 0px; border: solid 1px #CCCCCC;}
+.whiteBox {
+    background: #FFFFFF; padding: 5px 10px 5px 10px; margin: 0px; border: solid 1px #000000;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.blueBox { 
+    background: #DEEAF0; padding: 5px 10px 5px 10px; margin: 0px; border: solid 1px #6984A2;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+.blueBoxLine { 
+    background: #FFFFFF; padding: 5px 10px 5px 10px; margin: 0px; border: solid 1px #6984A2;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+.blueBoxLineSq { background: #FFFFFF; padding: 5px 10px 5px 10px; margin: 0px; border: solid 1px #7A9CCA;}
+.blueBoxSmall { width:570px; background: #DEEAF0; padding: 5px 10px 5px 10px; margin: 0px; border: solid 1px #6984A2;}
+.tabTxt {font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 800; color: #000000; text-decoration: none;}
+.tabTd {cursor:pointer;}
+
+.site-slogan-container  {width: 755px; height: 130px; top: 112px; position: absolute; z-index: 1; overflow: hidden; margin: 0px; padding-right: 15px; background-color: transparent; }
+.site-slogan {float: right; width: 700px; margin: 0px; padding: 0px; background-color: transparent; font-size: 10px;}
+.site-slogan p.title {float: right; width: 700px; margin: 0px; padding: 0px; color: rgb(234,239,247); font-family: arial, sans serif;  text-align: right; font-weight: bold; font-size: 220%;}
+.site-slogan p.subtitle {clear: both; float: right; width: 700px; margin: -5px 0px 0px 0px; padding: 0px; color: rgb(234,239,247); font-family: arial, sans serif; text-align: right; font-weight: bold; font-size: 200%;}
+.site-slogan p.text {clear: both; float: right; width: 700px; margin: 10px 0px 0px 0px; padding: 0px; color: rgb(234,239,247); font-family: arial, sans serif; text-align: right; font-weight: bold; line-height: 1.0em; font-size: 140%;}
+.site-slogan p.readmore {clear: both; float: right; width: 700px; margin: 10px 0px 0px 0px; padding: 0px; color: rgb(234,239,247); font-family: arial, sans serif; text-align: right; font-weight: bold; line-height: 1.0em; font-size: 120%;}
+.img-header {clear: both; float: left; width: 770px; height: 185px; margin: 0px; padding: 0px;}
+.img-logo {position: relative; clear: both; width: 232px; height: 57px; margin: 0px; padding: 0px; z-index: 6;}
+
+/* Top right navigation */
+.nav1-container {width: 770px; top: 35px; position: absolute; z-index: 0; background: transparent;}
+.nav1-divider {border-right: solid 1px rgb(84,116,175);}
+.nav1 {margin: 0px; padding: 0px; font-family: verdana, arial, sans serif; font-size: 1.0em;}
+.nav1 ul {float: right; margin: 0px; padding: 0px 0px 0px 0px; background-color: rgb(255,255,255); font-weight: bold;}	
+.nav1 li {display: inline; list-style: none; margin: 0px; padding: 0px;}
+.nav1 li a {display: block; float: left; margin: 0px; padding: 2px 5px 2px 5px; color: rgb(84,116,175); text-decoration: none; font-size: 0.85em;}
+.nav1 a:hover, .nav2 a.selected {color: rgb(50,50,50); text-decoration: none;}
+
+/* Footer */
+.footer {overflow: hidden; clear: both; width: 770px; margin: 0px; padding: 5px 0px 5px 0px; background-color: rgb(128,161,202); color: rgb(255,255,255); font-size: 0.85em;}
+.footer a {color: rgb(255,255,255); text-decoration: none; font-weight: bold;}
+.footer a:hover {color: rgb(0,0,0); text-decoration: none; font-weight: bold;}
+
+/* Form selection boxes */
+.optionHeader {background-color: #E6E4E4;}
+
+/* Headers */
+.fileListHeader {overflow: hidden; padding: 15px 0px 0px 0px; color: #6984A2; font-weight: bold; font-size: 170%;}
+.largeHeader {overflow: hidden; padding: 15px 0px 0px 0px; font-weight: bold; font-size: 2.0em;}
+.largeHeaderBlue {overflow: hidden; padding: 0px 0px 0px 0px; color: #6984A2; font-weight: bold; font-size: 170%;}
+.smallHeader {overflow: hidden; padding: 15px 0px 0px 0px; font-weight: bold; font-size: 1.4em;}
+.smallHeaderShare {overflow: hidden; padding: 0px 0px 0px 0px; color: #41383C; font-weight: bold; font-size: 1.2em;}
+.smallFAQHeader {overflow: hidden; padding: 0px 0px 0px 0px; font-weight: bold; font-size: 1.4em;}
+.smallHeaderRed {overflow: hidden; padding: 0px 0px 0px 0px; color: #FF0000; font-weight: bold; font-size: 1.4em;}
+.smallHeaderDarkBlue {overflow: hidden; padding: 15px 0px 0px 0px; color: #547DAC; font-weight: bold; font-size: 1.4em;}
+.smallHeaderGreen {overflow: hidden; padding: 15px 0px 0px 0px; color: #84A943; font-weight: bold; font-size: 1.4em;}
+.vsmallHeader {overflow: hidden; padding: 0px 0px 0px 0px; font-weight: bold; font-size: 1.2em;}
+.vsmallHeaderGrey {color:#666666; overflow: hidden; padding: 0px 0px 0px 0px; font-weight: bold; font-size: 1.2em;}
+.header-divider {border-bottom: 1px solid #5474af;background-color: #5474af;margin-top: 3px;}
+h3 {margin: 0em 0px 0.5em 0px; font-weight: bold; font-size: 140%;}
+p {margin: 1em 0px 1em 0px; }
+.formBackground {background:#FFFFA0}
+
+/* Tabs */
+#tabtable {position:relative;top:4px;}
+.tabtableheader {background-image: url(/images/bluegrad.gif); padding: 5px 0px 5px 0px;}
+.tabtableheader a {color: #000000; font-size:15px; font-weight:bold; text-decoration: none}
+.tabtableheader a:hover {color: #000000; text-decoration: underline}
+.tabtableheader span {color: #000000; font-size:15px; font-weight:bold; text-decoration: none}
+
+#tabtable div.tab1,
+#tabtable div.tab2,
+#tabtable div.tab3,
+#tabtable div.tab4 {
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-topright: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+    position: relative;
+    top: -1px;
+}
+
+#tabtable div#selectedTab {
+    z-index: 12;
+    border-bottom: none;
+}
+
+/* Manage File Table */
+.lt-tl-corner {background-image: url(/images/corner_lt_tl.gif); width: 7px;}
+.lt-tr-corner {background-image: url(/images/corner_lt_tr.gif); width: 7px;}
+.lt-bl-corner {background-image: url(/images/corner_lt_bl.gif); width: 7px;}
+.lt-br-corner {background-image: url(/images/corner_lt_br.gif); width: 7px;}
+.lt-bg {background-color: rgb(242, 242, 242);}
+.dk-tl-corner {background-image: url(/images/corner_dk_tl.gif); width: 7px;}
+.dk-tr-corner {background-image: url(/images/corner_dk_tr.gif); width: 7px;}
+.dk-bl-corner {background-image: url(/images/corner_dk_bl.gif); width: 7px;}
+.dk-br-corner {background-image: url(/images/corner_dk_br.gif); width: 7px;}
+.dk-bg {background-color: rgb(204, 204, 204);}
+
+/* Login */
+.login-container {width: 770px; top: 12px; position: absolute; z-index: 5; background: transparent;}
+.login-containerWt {margin: 0px; color: rgb(255,255,255); font-size: 0.85em; font-weight: bold; text-decoration: none; }
+.login-containerWt a {color: rgb(255,255,255); text-decoration: none; }
+.login-containerWt a:hover {color: rgb(0,0,0); text-decoration: none; font-weight: bold;}
+.login-containerBl a {margin: 0px; padding: 2px 5px 2px 5px; color: rgb(84,116,175); text-decoration: none; font-size: 0.85em; font-family: verdana, arial, sans serif; font-weight: bold;}
+.login-containerBl a:hover {color: rgb(0,0,0); text-decoration: none; font-weight: bold;}
+#loginHome input {width: 95px; border: 1px solid #555; font-size: 10px; padding: 2px; margin-right: 8px; background-color: #fff;}
+#inputBig {width: 230px; border: 1px solid #555; font-size: 16px; padding: 3px; margin-right: 8px; background: #fff url(/images/bg_grey.gif) repeat-x; border: 1px #d0d0d0 solid; padding: 3px;}
+#inputSm input {width: 200px; border: 1px solid #555; font-size: 16px; padding: 3px; margin-right: 8px; background-color: #fff;}
+#bigButton input {font-size: 1.3em; height: 31px;}
+#inputTxt span {font-size: 1.3em; font-weight: bold; margin-right: 10px;}
+#smartInput {font-size: 14px; background: #fff url(/images/bg_grey.gif) repeat-x; border: 1px #d0d0d0 solid; padding: 3px;}
+#formTag { color:#666666; font-weight:bold; font-size: 14px;}
+
+#planHeader td {font-size: 1.3em; padding: 8px; margin-right: 8px; background-image: url(/images/bluegradlrg.gif); font-weight: bold; border-top: 1px #000000 solid; border-bottom: 1px #000000 solid;}
+#planRowDark td {padding: 8px; margin-right: 8px; background-color: rgb(242, 242, 242); border-top: 1px #999 solid; border-right: 1px #999999 dashed; text-align: center}
+#planRowLight td {padding: 8px; margin-right: 8px; background-color: rgb(255, 255, 255); border-top: 1px #999 solid; border-right: 1px #999999 dashed; text-align: center}
+
+#registerBox ul {margin: 0px; padding-top: 8px; padding-left:15px; float: left;}	
+#registerBox li {background-image: url(/images/tick.gif); background-repeat: no-repeat; display: block; float: left; padding-left: 22px; margin-top: 7px; overflow: hidden;}
+
+.greenTick {background-image: url(/images/tick.gif); background-repeat: no-repeat; display: block; padding-left: 22px; margin-top: 7px; overflow: hidden;}
+
+/* Tool tip specific styles */
+#theToolTip{position: absolute;left: -300px;width: 200px;border: 2px solid #C0C09F;padding: 6px 0px 0px 10px;background-color: #FFFFCC;visibility: hidden;z-index: 100;filter: progid:DXImageTransform.Microsoft.Shadow(color=gray,direction=135,strength=4);}
+#ToolTipPointer{position:absolute;left: -300px;z-index: 101;visibility: hidden;}
+#theToolTip p{font-size: 1.1em;color: #333333;line-height:1.4em;margin-right:10px;margin-top:0;}
+#ToolTipTextWrap {font-weight:bold;font-size: 1.1em;color: #000000;margin-right:10px;}
+
+.shareButtons {font-size:14px;}
+
+/* Upload box style updates */
+select#toExtensionSel {
+    width: 120px;
+}
+
+input#toEmail {
+    width: 140px;
+}
+
+input#inputFile {
+    width: 180px;
+}
+
+tr#dnd-help {
+    display: none; /* default to hidden */
+}
+
+tr#dnd-help td {
+    font-size: 10px;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 7px;
+    padding-left: 15px;
+}
+
+/* Uploader Queue */
+table.upload-queue {
+    margin-top: 20px;
+    background-color: rgb(204, 204, 204);
+    width: 100%;
+    border-spacing: 1px;
+    border: 1px solid #b7b7b7;
+    word-wrap: break-word;
+    table-layout: fixed;
+}
+
+table.upload-queue thead tr th {
+    background: #dfdede; /* Old browsers */
+    background: -moz-linear-gradient(top,  #dfdede 0%, #dbdbdb 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dfdede), color-stop(100%,#dbdbdb)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #dfdede 0%,#dbdbdb 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #dfdede 0%,#dbdbdb 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #dfdede 0%,#dbdbdb 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #dfdede 0%,#dbdbdb 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfdede', endColorstr='#dbdbdb',GradientType=0 ); /* IE6-9 */
+}
+
+table.upload-queue tbody tr td {
+    background: #eaeaea; /* Old browsers */
+    background: -moz-linear-gradient(top,  #eaeaea 0%, #e5e5e5 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eaeaea), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #eaeaea 0%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #eaeaea 0%,#e5e5e5 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #eaeaea 0%,#e5e5e5 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #eaeaea 0%,#e5e5e5 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaeaea', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+}
+
+table.upload-queue tbody tr:hover td {
+    background: #def1fc; /* Old browsers */
+    background: -moz-linear-gradient(top,  #def1fc 0%, #b8c7db 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#def1fc), color-stop(100%,#b8c7db)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #def1fc 0%,#b8c7db 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #def1fc 0%,#b8c7db 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #def1fc 0%,#b8c7db 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #def1fc 0%,#b8c7db 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#def1fc', endColorstr='#b8c7db',GradientType=0 ); /* IE6-9 */
+}
+
+table.upload-queue thead tr th {
+    border-bottom: 1px solid #b7b7b7;
+}
+
+table.upload-queue tbody tr td {
+    border-bottom: 1px solid #d7d7d7;
+    border-right: 1px solid #d7d7d7;
+}
+
+table.upload-queue tbody tr.last td {
+    border-bottom: 0px;
+}
+
+table.upload-queue thead tr th {
+    border-right: 1px solid #b7b7b7;
+}
+
+table.upload-queue tbody tr:hover td {
+    border-right: 1px solid #a7beba;
+}
+
+table.upload-queue thead tr th.last,
+table.upload-queue tbody tr td.last,
+table.upload-queue tbody tr:hover td.last {
+    border-right: 0px;
+}
+
+
+table.upload-queue td,
+table.upload-queue th {
+    text-align: left;
+    padding: 8px 8px 8px 12px;
+}
+
+table.upload-queue th {
+    color: #000000;
+    font-weight: bold;
+}
+
+table.upload-queue td.name,
+table.upload-queue th.name {
+    width: 55%;
+}
+
+table.upload-queue td.size,
+table.upload-queue th.size {
+    width: 15%;
+}
+
+table.upload-queue td.progress,
+table.upload-queue th.progress {
+    width: 15%;
+}
+
+table.upload-queue td.remove,
+table.upload-queue th.remove {
+    width: 15%;
+    text-align: center;
+}
+
+/** Upload drag and drop styles **/
+.steps {
+    margin-right: 10px;
+}
+
+.stepsbody {
+    font: 13px "Tahoma",sans-serif;
+    color: #000;
+    margin: 0px auto;
+    padding: 0px;
+}
+
+.steps.dnd {
+    margin-top: 3px;
+    border: 5px dashed #666666;
+}
+
+.step1,
+.step2,
+.step3,
+.step4  {
+    height: 125px;
+}
+
+.steps.dnd .step1,
+.steps.dnd .step2,
+.steps.dnd .step3,
+.steps.dnd .step4 {
+    display: none;
+}
+
+.dnd-display {
+    display: none;
+    padding-top: 60px;
+    text-align: center;
+    height: 80px;
+    font-size: 20px;
+    background-color: #ffffff;
+}
+
+.steps.dnd .dnd-display {
+    display: block;
+}
+
+.convert-ol {
+    -webkit-padding-start: 20px;
+    -moz-padding-start: 20px;
+    -webkit-margin-after: 0em;
+    margin-bottom: 0em;
+    -webkit-margin-before: 0em;
+    margin-top: 0em;
+    line-height: 1.5;
+}
+
+.convert-h4 {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+#progressBar{
+    width: 99%;
+    height: 33px;
+    padding: 0px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background-image: url('images/pb-bg.gif');
+    overflow: hidden;
+    border: 1px solid #aeaeae;
+}
+
+#progressBarProgress {
+    width: 0%;
+    height: 33px;
+    background-image: url('images/pb-fg.gif');
+    -webkit-border-top-right-radius: 10px;
+    -webkit-border-bottom-right-radius: 8px;
+    -moz-border-radius-topright: 8px;
+    -moz-border-radius-bottomright: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-position: 0px 0px;
+}
+
+#progressText{
+    padding-top: 2px;
+    text-align: center;
+}
+
+.modal.zamzar-dialog {
+    width: 480px;
+    margin-left: -240px;
+}
+
+.zamzar-dialog .modal-footer a {
+    height: 34px;
+    text-decoration: none;
+}
+
+.zamzar-dialog .modal-footer a.vertical-center {
+    padding-top: 12px;
+    height: 26px;
+}
+
+.zamzar-dialog .modal-footer a span.sub {
+    display: block;
+    font-size: 9px;
+    margin: 0px;
+    line-height: 10px;
+}
+
+.zamzar-dialog div p {
+    margin-top: 25px;
+    margin-bottom: 0px;
+    font-size: 12px;
+}
+
+.zamzar-dialog div.warning {
+    margin-bottom: 10px;
+}
+
+.zamzar-dialog div.warning img {
+    vertical-align: middle;
+}
+
+.zamzar-dialog div p {
+    display: block;
+    word-wrap: break-word;
+}
+
+.zamzar-dialog div.warning p {
+    font-weight: bold;
+    display: inline-block;
+    width: 370px;
+    margin: 0px 0px 0px 20px;
+    vertical-align: middle;
+    color: #4C4C4C;
+}
+
+.zamzar-dialog div.warning p.message {
+    font-weight: normal;
+    display: block;
+    margin: 20px 0px 0px 0px;
+}
+
+.zamzar-dialog p a {
+    color: #5474AF;
+    text-decoration: none;
+}
+
+.zamzar-dialog p a:hover {
+    text-decoration: underline;
+}
+
+.modal.zamzar-dialog .modal-body {
+    padding: 25px;
+}
+
+
+/** Clear fix for grouping flots **/
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clearfix {
+	display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+	display: block;
+}
+ 
+* html .clearfix {
+	height: 1%;
+}
+
+/** Homepage social buttons **/
+div.site-slogan-container {
+    position: absolute;
+    z-index: 51;
+}
+
+img.img-header {
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.41);
+    -moz-box-shadow:    0px 3px 5px 0px rgba(50, 50, 50, 0.41);
+    box-shadow:         0px 3px 5px 0px rgba(50, 50, 50, 0.41);
+    position: relative;
+    z-index: 50;
+}
+
+div.homepage-social-share {
+    width: 263px;
+    height: 62px;
+    position: relative;
+    background-image: url("images/share-zamzar-with-friends.png");
+    background-repeat: no-repeat;
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.41);
+    -moz-box-shadow:    0px 3px 5px 0px rgba(50, 50, 50, 0.41);
+    box-shadow:         0px 3px 5px 0px rgba(50, 50, 50, 0.41);
+    top: -15px;
+    left: 15px;
+    z-index: 49;
+    text-align: center;
+    padding-top: 50px;
+}
+
+div.homepage-social-share-download {
+    width: 362px;
+    height: 42px;
+    position: relative;
+    background-image: url("images/share-zamzar-with-friends-download.png");
+    background-repeat: no-repeat;
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.41);
+    -moz-box-shadow:    0px 3px 5px 0px rgba(50, 50, 50, 0.41);
+    box-shadow:         0px 3px 5px 0px rgba(50, 50, 50, 0.41);
+    top: -15px;
+    left: 15px;
+    z-index: 49;
+    text-align: center;
+    padding-top: 50px;
+}
+
+div.homepage-social-share div.social-row {
+    margin-bottom: 5px;
+}
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    max-width: 100%;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+}
+
+.embed-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
