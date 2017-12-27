@@ -21,7 +21,7 @@ public class Dao
 	 Connection con;
  	String url = "jdbc:mysql://localhost:3306/college";
  	String uname = "root";
- 	String password = "Atif123#1";
+ 	String password = "123";
  	 public Dao() throws ClassNotFoundException, SQLException {
  		 Class.forName("com.mysql.jdbc.Driver");
  		  con = DriverManager.getConnection(url, uname, password);
